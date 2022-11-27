@@ -1,6 +1,6 @@
 <template>
   <div class="hello container">
-    <h1 class="text-s">{{ msg }}</h1>
+    <h1 class="text-s">{{ nombre }}</h1>
     <p class="d-flex justify-content-start">
   <button
    class="btn btn-primary"
@@ -74,8 +74,10 @@
 <script>
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String,
+  computed: {
+    nombre() {
+      return this.$store.state.nombre;
+    },
   },
 };
 </script>

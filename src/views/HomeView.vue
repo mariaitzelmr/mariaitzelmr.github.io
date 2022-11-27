@@ -25,8 +25,9 @@
 
 <template>
   <div class="home bg-image img-jaguar" >
+    <button @click="cambiaNombre" class="btn btn-primary">Cambiar el nombre</button>
     <div class="mask gradient-custom" style="background-color: rgb(0,0,0,0.6); height: 85vh;">
-      <HelloWorld msg="María Itzel Marroquín Ramírez"/>
+      <HelloWorld/>
     </div>
   </div>
 </template>
@@ -39,6 +40,16 @@ export default {
   name: 'HomeView',
   components: {
     HelloWorld,
+  },
+  data() {
+    return {
+      nombre: this.$store.state.name,
+    };
+  },
+  methods: {
+    cambiaNombre() {
+      this.$store.commit('cambiaNombre');
+    },
   },
 };
 </script>

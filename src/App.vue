@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Inicio</router-link> |
+      <router-link to="/">{{nombre}}</router-link> |
       <router-link to="/about">Otros intereses...</router-link>
     </nav>
     <router-view/>
@@ -30,3 +30,16 @@ nav {
   }
 }
 </style>
+
+<script>
+// @ is an alias to /src
+
+export default {
+  name: 'initPage',
+  computed: {
+    nombre() {
+      return this.$store.state.nombre;
+    },
+  },
+};
+</script>
