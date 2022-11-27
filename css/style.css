@@ -1,0 +1,31 @@
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Rubik Marker Hatch', cursive;
+}
+
+body.landing h1 {
+    font-size: 100px;
+}
+
+body.landing .cover,
+body .bio {
+    margin-top: 4rem;
+    height: 100vh;
+}
+
+.cover h1 {
+    margin-top: 30rem;
+}
+
+.navbar {
+    --bs-navbar-brand-color: rgba(180, 50, 180, 0.9);
+    --bs-navbar-brand-hover-color: rgb(100, 50, 100, 0.9);
+}
+
+.navbar-nav {
+    --bs-nav-link-color: rgba(180, 50, 180, 0.9);
+    --bs-nav-link-hover-color: rgb(100, 50, 100, 0.9);
+}
