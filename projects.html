@@ -10,29 +10,100 @@
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dosis&family=Rubik+Marker+Hatch&display=swap"
+            rel="stylesheet"
+        />
         <link href="css/style.css" rel="stylesheet" />
-        <title>MIMR Portfolio</title>
+        <title>Landing page</title>
     </head>
-    <body>
+    <body class="data bg-dark text-white">
         <header>
-            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-dark">
                 <a class="navbar-brand" href="index.html">MIMR's</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="bio.html">Bio</a>
-                      </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                  </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html"
+                                >Projects</a
+                            >
+                        </li>
+                    </ul>
                 </div>
-              </nav>
+            </nav>
         </header>
-        lista de proyectos
+        <div class="container">
+            <h3>Check out some projects I've been working on!</h3>
+            <div class="row info">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="./img/pacmen.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Pacmen Exercise</h5>
+                    <p class="card-text">
+                      In this project you create as many pacmen as you want by pressing "Add pacman", then you make them fly
+                      and bounce in the window by pressing "Start game".<br>
+                      It's relaxing to watch it for a while.
+                    </p>
+                    <a href="https://github.com/mariaitzelmr/Pacmen-Exercise" target="_blank">Pacmen exercise!</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="./img/eyes.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Eye Exercise</h5>
+                    <p class="card-text">
+                      Move your cursor through the screen, from one side to the other and see this mysterious eyes following
+                      your every move...
+                    </p>
+                    <a href="https://github.com/mariaitzelmr/Eye-Exercise" target="_blank">Eye Exercise</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="./img/busTracker.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Bus Tracker!</h5>
+                    <p class="card-text">
+                      In this project you can see 9 different buses from the route 1 of Massachussets moving around.<br>
+                      The project says "Real Time" but actually it is not as the data must be acquired every 15 seconds at most.<br>
+                      When I get to work out my own API I might do a more real-time-like bus tracker! But that's for future work.
+                    </p>
+                    <a href="https://github.com/mariaitzelmr/Real-Time-Bus-Tracker" target="_blank">Bus Tracker!</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="./img/myPhoto.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Portfolio!</h5>
+                    <p class="card-text">
+                      Yes! Here is the link to my portfolio code! Feel free to check it ou, it was styled with the help of 
+                      Bootstrap and its grid system. Bootstrap use included in this portfolio via CDN.
+                    </p>
+                    <a href="https://github.com/mariaitzelmr/mariaitzelmr.github.io" target="_blank">Portfolio!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
